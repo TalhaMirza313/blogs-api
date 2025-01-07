@@ -17,7 +17,9 @@
     "js-convert-case": "^4.2.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.3",
-    "serverless-http": "^3.0.3"
+    "netlify-cli": "^18.0.0",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
