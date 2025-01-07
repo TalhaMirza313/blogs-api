@@ -1,7 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const routesEvent = require("./models/user");
-const routesBlog = require("./models/blog");
+const routesEvent = require("../../models/user");
+const routesBlog = require("../../models/blog");
+const serverless = require("serverless-http");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
 const SECRET_KEY = "your_secret_key";
@@ -134,4 +135,6 @@ router.get("/fetch", async (req, res) => {
   }
 });
 
-app.use(router);
+app.use("/.netlify/functions/api", router);
+
+module.exports.handler = serverless(app);
