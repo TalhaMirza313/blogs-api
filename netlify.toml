@@ -1,5 +1,6 @@
 [build]
-  functions = "functions"
+  functions = "netlify/functions-build" # Specify the output directory for built functions
 
 [dev]
-  publish = "dist"
+  # Optional: Specify the source folder for local development
+  functions = "netlify/functions" 

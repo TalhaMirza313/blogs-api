@@ -135,6 +135,6 @@ router.get("/fetch", async (req, res) => {
   }
 });
 
-app.use("/.netlify/functions/api", router);
+app.use("functions/api", router);
 
 module.exports.handler = serverless(app);
