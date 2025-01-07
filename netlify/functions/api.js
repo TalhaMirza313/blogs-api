@@ -135,6 +135,6 @@ router.get("/fetch", async (req, res) => {
   }
 });
 
-app.use("functions/api", router);
+app.use("/api", router);
 
 module.exports.handler = serverless(app);
