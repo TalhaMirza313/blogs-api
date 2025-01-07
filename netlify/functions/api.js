@@ -18,7 +18,7 @@ const dbURL =
 mongoose
   .connect(dbURL)
   .then((result) => {
-    console.log("Connected to MongoDB");
+    console.log("Connected  MongoDB");
     app.listen(3000, () => {
       console.log("Server started on port 3000");
     });
